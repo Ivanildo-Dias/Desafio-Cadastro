@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <script src=""></script>
+    <title>Cadastro</title>
+    <div class="formulario">
+        <form action="">
+            <fieldset>
+                <legend><b>Cadastro pessoal</b></legend>
+                <div id="box">
+                    <input type="text" nome="nome" id="nome" class="informacao" required>
+                    <label for="nome" class="descricao">Nome completo</label>
+                </div>
+                <div id="box">
+                    <input type="number" nome="cpf" id="cpf" class="informacao" required>
+                    <label for="cpf" class="descricao">CPF</label>
+                </div>
+                <div id="box">
+                    <input type="text" nome="rg" id="rg" class="informacao" required>
+                    <label for="rg" class="descricao">RG</label>
+                </div>
+                <div id="box">
+                    <select name="sexo" id="sexo" class="informacao">
+                        <option value="" hidden>Selecione o sexo</option>
+                        <option value="feminino">Feminino</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="outros">Outros</option>
+                    </select>
+                </div>
+                <div id="box">
+                    <input type="number" nome="cep" id="cep" class="informacao" required>
+                    <label for="cep" class="descricao">CEP</label>
+                    <label for="buscarCep" class="buscarCep"></label>
+                </div>
+                <div id="box">
+                    <input type="text" nome="endereco" id="endereco" class="informacao" required>
+                    <label for="endereco" class="descricao">Endereço</label>
+                </div>
+                <div id="box">
+                    <input type="number" nome="numero" id="numero" class="informacao" required>
+                    <label for="numero" class="descricao">Número</label>
+                </div>
+                <div id="box">
+                    <input type="text" nome="bairro" id="bairro" class="informacao" required>
+                    <label for="bairro" class="descricao">Bairro</label>
+                </div>
+                <div id="box">
+                    <input type="text" nome="cidade" id="cidade" class="informacao" required>
+                    <label for="cidade" class="descricao">Cidade</label>
+                </div>
+                <div id="box">
+                    <input type="text" nome="estado" id="estado" class="informacao" required>
+                    <label for="estado" class="descricao">Estado</label>
+                </div>
+                <div id="box">
+                    <input type="tel" nome="fixo" id="fixo" class="informacao" required>
+                    <label for="fixo" class="descricao">Telefone fixo</label>
+                </div>
+                <div id="box">
+                    <input type="tel" nome="celular" id="celular" class="informacao" required>
+                    <label for="celular" class="descricao">Telefone celular</label>
+                </div>
+                <div id="box" class="botaoAjuste">
+                    <input type="submit" value="Cadastrar" nome="cadastrar" id="cadastrar" onclick="this.value='Aguarde...'" class="botao">
+                    <input type="submit" value="Limpar" nome="limpar" id="limpar" onclick="this.value='Aguarde...'" class="botao">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</head>
+<body>
+    
+</body>
+</html>

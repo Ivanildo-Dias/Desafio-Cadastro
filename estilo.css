@@ -1,0 +1,115 @@
+body{
+    background-image: linear-gradient(to right, #fabe90, #F76A00);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.formulario{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(0, 0, 0, 0.8);
+    padding: 15px;
+    border-radius: 3.5%;
+    width: 40%;
+    min-width: 38%;
+}
+
+/*  Retira a seta do input number  */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+fieldset{
+    border: solid 3px dodgerblue;
+    border-radius: 3.5%;
+}
+
+legend{
+    text-align: center;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-bottom: 6%;
+}
+
+#box{
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.informacao{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white; 
+    outline: none;   
+    color: white;
+    font-size: 12px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+.descricao{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s ;
+}
+
+.informacao:focus ~ .descricao, 
+.informacao:valid ~ .descricao{
+    top: -18px;
+    font-size: 12px;
+    color: #EC7000;
+}
+
+/*  icone de busca  */
+.buscarCep{
+    background-image: url(imagens/lupa.png);
+    position: absolute;
+    text-align: right;
+    top: -10px;
+    right: 0%;
+    width:23px;
+    height:23px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.buscarCep:hover{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.botaoAjuste{
+    display: flex;
+    justify-content: space-between;
+}
+
+.botao{
+    color: white;
+    margin-left: 3%;
+    margin-right: 3%;
+    width: 44%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+#cadastrar{
+    background-image: linear-gradient(to right, #429422, #2f6619);
+}
+
+#limpar{
+    background-image: linear-gradient(to right, #EC6554, #990707);
+}
+
+.botao:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
