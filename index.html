@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="Javascript.js"></script>
+    <title>Cadastro</title>
+<body>
+    <!--Formulário-->
+    <div class="formulario">
+        <form action="">
+            <fieldset>
+                <!--Titulo do formulário-->
+                <legend><b>Cadastro pessoal</b></legend>
+                <!--Input Nome completo-->
+                <div id="box">
+                    <input type="text" nome="nome" id="nome" class="informacao" size="40" onblur="mascara_nome(this.value)" autocomplete="off" required>
+                    <label for="nome" class="descricao">Nome completo <strong>*</strong></label>
+                </div>
+                <!--Input CPF-->
+                <div id="box">
+                    <input type="texte" nome="cpf" id="cpf" class="informacao" onkeyup="validacao()" autocomplete="off" maxlength="11" required>
+                    <label for="cpf" class="descricao">CPF <strong>*</strong></label>
+                    <!--Animação da validação de CPF-->
+                    <div id="alerta_cpf">
+                        <div id="cpf_valido" class="cpf_valido" style="display: none;" role="alert">
+                            <img src="imagens/valido.png">
+                        </div>
+                        <div id="cpf_invalido" class="cpf_invalido" style="display: none;" role="alert">
+                            <img src="imagens/invalido.png">
+                        </div>
+                    </div>
+                </div>
+                <!--Input RG-->
+                <div id="box">
+                    <input type="text" nome="rg" id="rg" class="informacao" onkeyup="mascara_rg()" autocomplete="off" maxlength="12" required>
+                    <label for="rg" class="descricao">RG</label>
+                </div>
+                <!--Select Sexo-->
+                <div id="box">
+                    <select name="sexo" id="sexo" class="informacao" required>
+                        <option value="" hidden></option>
+                        <option value="feminino">Feminino</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="outros">Outros</option>
+                    </select>
+                    <label for="sexo" class="descricao">Sexo</label>
+                </div>
+                <!--Input CEP-->
+                <div id="box">
+                    <input type="text" nome="cep" id="cep" class="informacao" onkeyup="mascara_cep()" autocomplete="off" onblur="pesquisacep(this.value)" maxlength="9" required>
+                    <label for="cep" class="descricao">CEP</label>
+                    <label for="buscarCep" class="buscarCep" onclick="pesquisacep(valor)"></label>
+                </div>
+                <!--Input Endereço-->
+                <div id="box">
+                    <input type="text" nome="endereco" id="endereco" class="informacao" autocomplete="off" required>
+                    <label for="endereco" class="descricao">Endereço <strong>*</strong></label>
+                </div>
+                <!--Input Número-->
+                <div id="box">
+                    <input type="number" nome="numero" id="numero" class="informacao" autocomplete="off" required>
+                    <label for="numero" class="descricao">Número <strong>*</strong></label>
+                </div>
+                <!--Input Bairro-->
+                <div id="box">
+                    <input type="text" nome="bairro" id="bairro" class="informacao" autocomplete="off" required>
+                    <label for="bairro" class="descricao">Bairro</label>
+                </div>
+                <!--Input Cidade-->
+                <div id="box">
+                    <input type="text" nome="cidade" id="cidade" class="informacao" autocomplete="off" required>
+                    <label for="cidade" class="descricao">Cidade</label>
+                </div>
+                <!--Input Estado-->
+                <div id="box">
+                    <input type="text" nome="estado" id="estado" class="informacao" autocomplete="off" required>
+                    <label for="estado" class="descricao">Estado</label>
+                </div>
+                <!--Input Telefone fixo-->
+                <div id="box">
+                    <input type="text" nome="fixo" id="fixo" class="informacao" onkeyup="mascara_fixo()" autocomplete="off" maxlength="13" required>
+                    <label for="fixo" class="descricao">Telefone fixo</label>
+                </div>
+                <!--Input Telefone celular-->
+                <div id="box">
+                    <input type="text" nome="celular" id="celular" class="informacao" onkeyup="mascara_celular()" autocomplete="off" maxlength="14" required>
+                    <label for="celular" class="descricao">Telefone celular <strong>*</strong></label>
+                </div>
+                <!--Botões-->
+                <form action="">
+                    <div id="box" class="botaoAjuste">
+                        <button type="button" nome="cadastrar" id="cadastrar" class="botao" onclick="cadastra()">cadastrar</button>
+                        <button type="button" nome="limpar" id="limpar" class="botao" onclick="limpa()">Limpar</button>
+                    </div>
+                    <!--Informativo rodapé-->
+                    <p>Os campos marcados com <b id="asterisco">*</b> são obrigatórios.</p>
+                </form>
+            </fieldset>
+        </form>
+    </div>
+</head>    
+</body>
+</html>
