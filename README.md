@@ -1,5 +1,5 @@
 # Itaú Tech - Projeto Cadastro 
-[![NPM](https://img.shields.io/npm/l/react)](https://github.com/devsuperior/sds1-wmazoni/blob/master/LICENSE) 
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/Ivanildo-Dias/Desafio-Cadastro/blob/main/LICENSE) 
 
 # Desafio
 
@@ -42,32 +42,32 @@ Os entregáveis descritos acim
 
 Site hospedado em: https://itau-tech-cadastro.netlify.app/
 
-O projeto foi desenvolvido em 02 dias, um formulário simples que coleta as informações do usuário, verifica se os campos obrigatórios foram preenchidos corretamente é dá um alerta de cadastro, nele foram utilizadas validações em Javascript para:
+O projeto foi desenvolvido em 02 dias, um formulário simples que coleta as informações do usuário, verifica se os campos obrigatórios foram preenchidos corretamente e dá um alerta de cadastro, nele foram utilizadas validações em Javascript para:
 
-- Máscara de campo: Nome, RG; CEP, Teleones.
+- Máscara de campo: Nome, RG; CEP, Telefones.
 - Botão para limpar campos.
 - Botão de validação de dados e alerta.
 - Validador de CPF.
 - Buscador de Cep.
 
 
-## Layout mobile
-![Mobile 1](https://github.com/acenelio/assets/raw/main/sds1/mobile1.png) ![Mobile 2](https://github.com/acenelio/assets/raw/main/sds1/mobile2.png)
+## Layout
+![Layout](https://github.com/Ivanildo-Dias/Desafio-Cadastro/blob/main/imagens/layout.JPG)
 
 # Tecnologias utilizadas
 
-## Front end
+## Front-end
 - HTML
 - CSS
 - JavaScript
 
 ## Implantação em produção
-- Front end web: Netlify
+- Front-end web: Netlify
 
 ## Material de apoio
 - Layout inspirado em: https://www.youtube.com/watch?v=VCsNIRXNsmY
-- suporte HTML / CSS / Javascript: https://www.w3schools.com/
-- suporte HTML / CSS / Javascript: https://xpcorp.gama.academy/aluno/playlists
+- Suporte HTML / CSS / Javascript: https://www.w3schools.com/
+- Suporte HTML / CSS / Javascript: https://xpcorp.gama.academy/aluno/playlists
 - Desenvolvimento do Readme: https://www.youtube.com/watch?v=jIa8R69pKh8
 
 # Autor
