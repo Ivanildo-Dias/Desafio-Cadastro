@@ -27,7 +27,7 @@ function cadastra(){
         document.getElementById("numero").focus();
         return false
     //Verifica se o campo Celular está preenchido
-    } else if(document.getElementById("celular").value.length !=11){
+    } else if(document.getElementById("celular").value.length !=14){
         alert("Para continuar é nessário preencher o campo: Telefone celular");
         document.getElementById("celular").focus();
         return false
